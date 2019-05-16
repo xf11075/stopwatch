@@ -7,19 +7,19 @@ function stopstart() {
     if (0 == m_t[2]) {
         clearInterval(m_t[4]);
         m_t[3] += m_t[1] - m_t[0];
-        document.getElementById("startstopbutton").value = "\u5f00\u59cb";
-        document.getElementById("split").innerHTML += (m_t[7]++) + " \u505c\u6b62: " + format(m_t[1] - m_t[0]) + "<br />";
+        document.getElementById("startstopbutton").value = "开始";
+        document.getElementById("split").innerHTML += (m_t[7]++) + " 停止: " + format(m_t[1] - m_t[0]) + "<br />";
         m_t[4] = m_t[1] = m_t[0] = 0;
         disp();
         firstsplitflag = 0
     } else {
-        document.getElementById("startstopbutton").value = "\u505c\u6b62";
+        document.getElementById("startstopbutton").value = "停止";
         m_t[4] = setInterval(disp, 43)
     }
 }
 function dosplit() {
     if (0 !== m_t[2]) {
-        document.getElementById("split").innerHTML += (m_t[7]++) + " \u5206\u5272: " + format(m_t[1] - m_t[0]) + "<br>"
+        document.getElementById("split").innerHTML += (m_t[7]++) + " 计次: " + format(m_t[1] - m_t[0]) + "<br>"
     }
 }
 function reset_it() {
