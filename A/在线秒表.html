@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <meta name="applicable-device" content="pc,mobile">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="keywords" content="在线秒表">
+        <meta name="description" content="在线秒表">
+        <title>在线秒表/计时器</title>
+
+        <link href="./stopwatch/style.css" rel="stylesheet" type="text/css">
+        <link href="./stopwatch/miaobiao.css" rel="stylesheet" type="text/css">
+        
+        <script>cache_sjs="19021210";sj_jie_mian="1";</script>
+
+        <script src=./stopwatch/jiemian.js></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="main_left">
+                <div class="kuang" style="margin-bottom: 8px;">
+                    <div id="main_content">
+                        <div class="nry_bt">
+                            <img src="./stopwatch/i_c_o.png" alt="在线秒表">
+                            <div class="nry_bt_text">在线秒表</div>
+                        </div>
+                        <script>jie_mian_qie_huan();</script> 
+                        <div class="huisefengexian"></div>
+                        <div id="miaobiao_k">
+                            <form name="stopwatch" id="stopwatch" title="Stopwatch">
+                                <input type="button" onclick="stopstart()" onfocus="this.blur()" name="startstopbutton" id="startstopbutton" title="开始 / 停止" value="开始">
+                                <input type="button" onclick="dosplit()" onfocus="this.blur()" name="splitbutton" id="splitbutton" title="分割" value="分割">
+                                <input type="button" name="disp" id="disp" title="秒表" value="00:00:00.000">
+                                <input type="button" onclick="reset_it()" onfocus="this.blur()" name="resetbutton" id="resetbutton" title="清除" value="清除">
+                            </form>
+                        </div>
+                        <div id="split"></div>
+                        <!-- <script type="text/javascript" async src="./stopwatch/miaobiao.js"></script> -->
+                        <script>
+                            window.onload=function(){
+                                var script = document.createElement("script");
+                                script.type = "text/javascript";
+                                script.src = "./stopwatch/miaobiao.js";
+                                document.body.appendChild(script);
+                            }
+                        </script>
+                        <h2 class="xiaoshuomingkuang_biaoti">关于本秒表</h2>
+                        <div class="xiaoshuomingkuang_neirong">
+                            <p>模拟秒表、计时器的原理，方便您计算时间。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
