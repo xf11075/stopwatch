@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="GBK">
+    <title>秒表</title>
+    <link href="./miaobiaoB/basic.css" rel="stylesheet" type="text/css">
+    <link href="./miaobiaoB/watchForward.css" rel="stylesheet" type="text/css">
+    <script src="./miaobiaoB/app.js" type="text/javascript"></script>
+    <script src="./miaobiaoB/watchForward.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        App.Tools.documentReady(function () {
+            App.Watch.WatchForwardView();
+        });
+    </script>
+    <style type="text/css"> 
+       
+      
+    </style>
+</head>
+<body topmargin="0" leftmargin="0" style="BACKGROUND-COLOR: transparent">
+    <div class="wrapper">
+        <div id="watch1-show">
+            <ul class="number-wrapper">
+                <li class="number"><span id="minute3">0</span></li>
+                <li class="number"><span id="minute2">0</span></li>
+                <li class="number"><span id="minute1">0</span></li>
+                <li class="dot2"><span></span></li>
+                <li class="number"><span id="second2">0</span></li>
+                <li class="number"><span id="second1">0</span></li>
+                <li class="dot1"><span></span></li>
+                <li class="number"><span id="miliSecond">0</span></li>
+            </ul>   
+            <div class="control">
+                <a class="start" href="javascript:void(0)" id="startAndStop" hidefocus="true"></a>
+                <a class="reset" href="javascript:void(0)" id="resetAndRecord" hidefocus="true"></a>
+                <span class="text" id="lastRecordToNow"></span>
+            </div>
+        </div>
+
+        <div id="watch1-seperate"></div>
+        
+        <div id="watch1-record">
+            <ul class="list" id="recordList">
+            </ul>
+           <ul class="pager" id="pager"><li class="selected" id="pNaN"></li></ul>
+        </div>
+    </div>
+
+</body>
+</html>

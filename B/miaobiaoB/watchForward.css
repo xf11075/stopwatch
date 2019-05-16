@@ -1,0 +1,233 @@
+﻿.wrapper {
+    width: 540px;
+    margin:auto;
+}
+
+#watch1-show {
+    padding-left: 25px;
+    height: 255px;
+    background: url(images/bg2.jpg) repeat-y;
+    padding-top: 1px;
+}
+
+#watch1-seperate {
+    height: 20px;
+    background: url(images/bg-join.jpg) no-repeat;
+}
+
+#watch1-record {
+    height: 140px;
+    background: url(images/bg1.png);
+    position: relative;
+}
+
+#watch1-show ul.number-wrapper {
+    overflow: hidden;
+    zoom:1; margin-top: 30px;
+}
+
+#watch1-show ul.number-wrapper li {
+    position: relative;
+    float: left;
+    margin: 3px;
+    display: inline;
+}
+
+#watch1-show ul.number-wrapper li span {
+    position: absolute;
+}
+
+#watch1-show li.number {
+    width: 67px;
+    height: 99px;
+    background: url(images/number-bg.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/number-bg.png', sizingMethod='scale') !important;
+    font-family: "Lucida Grande","Microsoft Yahei","Trebuchet MS",sans-serif;
+    font-size: 90px;
+    color: #FFF;
+}
+
+#watch1-show li.number span {
+    top: -10px;
+    left: 5px;
+}
+
+#watch1-show li.dot2 {
+    width: 20px;
+}
+
+#watch1-show li.dot2 span {
+    top: 20px;
+    left: 0;
+    width: 18px;
+    height: 58px;
+    background: url(images/dot-two.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot-two.png', sizingMethod='scale') !important;
+}
+
+#watch1-show li.dot1 {
+    width: 20px;
+}
+
+#watch1-show li.dot1 span {
+    top: 62px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url(images/dot-one.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot-one.png', sizingMethod='scale') !important;
+}
+
+#watch1-show .control {
+    margin-top: 35px;
+    position: relative;
+    height: 60px;
+}
+
+#watch1-show .control a,#watch1-show .control span {
+    position: absolute;
+    top: 0;
+    height: 51px;
+    line-height: 51px;
+}
+
+#watch1-show .control a {
+    width: 136px;
+    cursor: pointer;
+    outline: none;
+}
+
+#watch1-show .control a.stop {
+    left: 0;
+    background: url(images/stop-normal.png) no-repeat;
+}
+
+#watch1-show .control a.stop:hover {
+    left: 0;
+    background: url(images/stop-hover.png) no-repeat;
+}
+
+#watch1-show .control a.stop:active {
+    left: 0;
+    background: url(images/stop-press.png) no-repeat ;
+}
+
+#watch1-show .control a.start {
+    left: 0;
+    background: url(images/start-normal.png) no-repeat ;
+}
+
+#watch1-show .control a.start:hover {
+    left: 0;
+    background: url(images/start-hover.png) no-repeat ;
+}
+
+#watch1-show .control a.start:active {
+    left: 0;
+    background: url(images/start-press.png) no-repeat ;
+}
+
+#watch1-show .control a.reset {
+    left: 150px;
+    background: url(images/reset-normal.png) no-repeat ;
+}
+
+#watch1-show .control a.reset:hover {
+    background: url(images/reset-hover.png) no-repeat ;
+}
+
+#watch1-show .control a.reset:active {
+    background: url(images/reset-press.png) no-repeat;
+}
+
+#watch1-show .control a.record {
+    left: 150px;
+    background: url(images/record-normal.png) no-repeat;
+}
+
+#watch1-show .control a.record:hover {
+    background: url(images/record-hover.png) no-repeat;
+}
+
+#watch1-show .control a.record:active {
+    background: url(images/record-press.png) no-repeat;
+}
+
+#watch1-show .control a.recordDisabled {
+    left: 150px;
+    background: url(images/record-disabled.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/record-disabled.png', sizingMethod='scale') !important;
+}
+
+#watch1-show .control span.text {
+    left: 350px;
+    font-family: "Lucida Grande","Microsoft Yahei","Trebuchet MS",sans-serif;
+    font-size: 36px;
+    color: #FFF;
+}
+
+#watch1-record ul.list {
+    position: relative;
+    height: 100px;
+}
+
+#watch1-record ul.list li {
+    width: 65px;
+    padding-left: 65px;
+    line-height: 21px;
+    margin-left: 25px;
+    color: #FFF;
+    font-weight: bold;
+    font-family: "Lucida Grande","Microsoft Yahei","Trebuchet MS",sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#watch1-record ul.list li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #969798;
+    background: url(images/record-bg.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/record-bg.png', sizingMethod='scale') !important;
+    height: 21px;
+    width: 52px;
+    font-weight: normal;
+    text-align: center;
+    font-family: "宋体";
+    letter-spacing: 0;
+}
+
+#watch1-record ul.pager {
+    padding-left: 25px;
+    margin-top: 8px;
+    overflow: hidden;
+    zoom:1; height: 15px;
+}
+
+#watch1-record ul.pager li {
+    float: left;
+    margin-right: 8px;
+    height: 13px;
+    width: 13px;
+    background: url(images/page.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/page.png', sizingMethod='scale') !important;
+    cursor: pointer;
+}
+
+#watch1-record ul.pager li.selected {
+    background: url(images/page-current.png) no-repeat !important;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/page-current.png', sizingMethod='scale') !important;
+    position: relative;
+    top: -1px;
+}
